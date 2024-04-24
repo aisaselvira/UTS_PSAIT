@@ -1,0 +1,64 @@
+#btnTambahNilai {
+    background-color: #1bb13e;
+    border-color: #1bb13e;
+    color: #fff;
+}
+
+.judul {
+    background-color: #cde0ff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.btn-update {
+    background-color: #d09011;
+    border-color: #d09011;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #db2a3c;
+    border-color: #db2a3c;
+    color: #fff;
+}
+
+.table-custom {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.table-custom th,
+.table-custom td {
+    border: none;
+}
+
+.table-custom th {
+    background-color: #2b6cd4;
+    color: #fff;
+}
+
+.table-custom td {
+    background-color: #ffffff;
+}
+
+#actionMessage {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    display: none;
+}
+
+.action-success {
+    background-color: #28a745;
+}
+
+.action-error {
+    background-color: #dc3545;
+
+}
