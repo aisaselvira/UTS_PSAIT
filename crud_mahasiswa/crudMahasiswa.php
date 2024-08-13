@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Sistem Informasi Akademik</h1>
+        <h1 class="text-center mb-4 judul">Sistem Informasi Akademik</h1>
 
         <button id="btnTambahNilai" class="btn btn-success mb-3 float-right" onclick="toggleFormTambahNilai()">Tambah Nilai</button>
 
@@ -31,6 +31,7 @@
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </form>
         </div>
+        
 
         <div id="actionMessage" class="action-success"></div>
 

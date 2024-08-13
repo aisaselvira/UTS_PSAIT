@@ -72,8 +72,6 @@ function tambahNilai() {
         tampilkanSemuaNilai(); 
         showActionMessage(data.message, true);
         document.getElementById('formTambahNilaiInner').reset(); 
-        // Menambahkan notifikasi berhasil simpan data
-        alert("Data berhasil disimpan.");
     })
     .catch(error => {
         console.error('Error:', error);
@@ -93,13 +91,17 @@ function hapusNilai(nim, kode_mk) {
     .then(data => {
         tampilkanSemuaNilai(); 
         showActionMessage(data.message, true);
-        // Menambahkan notifikasi berhasil hapus data
-        alert("Data berhasil dihapus.");
     })
     .catch(error => {
         console.error('Error:', error);
         showActionMessage('Terjadi kesalahan. Silakan coba lagi.', false);
     });
+}
+
+function confirmDelete(nim, kode_mk) {
+    if (confirm('Apakah Anda yakin ingin menghapus nilai ini?')) {
+        hapusNilai(nim, kode_mk);
+    }
 }
 
 function updateNilai(nim, kode_mk) {
@@ -116,8 +118,6 @@ function updateNilai(nim, kode_mk) {
         .then(data => {
             tampilkanSemuaNilai();
             showActionMessage(data.message, true);
-            // Menambahkan notifikasi berhasil memperbarui data
-            alert("Data berhasil diperbarui.");
         })
         .catch(error => {
             console.error('Error:', error);
@@ -125,12 +125,3 @@ function updateNilai(nim, kode_mk) {
         });
     }
 }
-
-
-
-function confirmDelete(nim, kode_mk) {
-    if (confirm('Apakah Anda yakin ingin menghapus nilai ini?')) {
-        hapusNilai(nim, kode_mk);
-    }
-}
-
